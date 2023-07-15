@@ -27,6 +27,7 @@ db.once('open', function () {
 // Define schema and model for the data
 const Schema = mongoose.Schema;
 const DataSchema = new Schema({
+  to_day: String,
   to_date: String,
   to_month: String,
   to_year: String,
@@ -104,15 +105,25 @@ app.get('/', function (req, res) {
 app.get('/mg-admin', function (req, res) {
     res.sendFile(__dirname + '/admin.html');
   });
+
+
+  app.post('/login', (req, res) => {
+    const { password } = req.body;
+    if (password === 'mg123') {
+      res.redirect('/mg-admin');
+    } else {
+      res.send('Invalid password');
+    }
+  });
   
 // Handle form submission
 app.post('/submit', function (req, res) {
     const data = new DataModel({
   
       to_date: req.body.to_date,
-  
       to_month: req.body.to_month,
       to_year: req.body.to_year,
+      to_day: req.body.to_day,
       
       bs1_Per1: req.body.bs1_Per1,
       bs1_Per2: req.body.bs1_Per2,
