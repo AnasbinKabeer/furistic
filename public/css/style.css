@@ -256,9 +256,39 @@ section {
 }
 
 
+
   
+.to_date{
+    background: #1580AD;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    width: 40px;
+}
+    
+
+
+.to_month{
+    background: #1580AD;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    width: 50px;
+}
+
+.to_year{
+    background: #1580AD;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    width: 50px;
+}
+
+
+
 
   #dropdown1{
     border: none;
     width: 47px;
   }
+
