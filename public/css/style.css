@@ -105,7 +105,8 @@ section {
 }
 
 .no {
-    
+        color: #cc0000c2;
+    font-weight: 900;
 
      font-family: poppins;
     font-size: 12px;
