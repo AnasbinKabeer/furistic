@@ -105,11 +105,11 @@ section {
 }
 
 .no {
-    font-family: 'Poppins', sans-serif;
+    
+
+     font-family: poppins;
     font-size: 12px;
     margin-top: 22px;
-    color: #cc0000c2;
-    font-weight: 900;
 }
 
 .no_controller{
