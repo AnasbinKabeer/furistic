@@ -167,6 +167,7 @@ section {
         cursor: pointer;
         margin-top: 40px;
         margin-right: 20px;
+        float: right;
 }
 
       
@@ -254,7 +255,10 @@ section {
     display: none;
 }
 
-select {
-   width: 47px;
-  }
+
   
+
+  #dropdown1{
+    border: none;
+    width: 47px;
+  }
