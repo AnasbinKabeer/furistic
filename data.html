@@ -1,381 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
 
-
-
-
- <!DOCTYPE html>
- <html>
- <head>
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="/css/min.style.css">
-  <title>MG</title>
- </head>
- <body>
+  <title>MG-Admin</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="\images\markazgarden.png" type="image/x-icon" />
+</head>
 
-  <section >
+<body>
+
+  <section>
     <div class="container">
+      <form action="/submit" method="POST">
         <div id="example-table" class="print-page">
-        <center>
+          <center>
             <div class="header">
-                <div class="title">TIME TABLE</div>
-                <div  id="today_dte" class="date">
-                    <div id="to_date" class="day"></div>
-                    <div id="to_month" class="day"></div>
-                    <div id="to_year" class="day"></div>
-                    
-                </div>
+              <div class="title">MG-TIME TABLE</div>
+              <div style="width: 200px; height: 30px;" class="date">
+
+                <select name="to_date" id="dropdown1">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+
+                </select>
+                <select name="to_month" id="dropdown1">
+                  <option value="JUN">JUN</option>
+                  <option value="JUL">JUL</option>
+                  <option value="AUG">AUG</option>
+                  <option value="SEP">SEP</option>
+                  <option value="OCT">OCT</option>
+                  <option value="NOV">NOV</option>
+                  <option value="DEC">DEC</option>
+                  <option value="JAN">JAN</option>
+                  <option value="FEB">FEB</option>
+                  <option value="MAR">MAR</option>
+                  <option value="APR">APR</option>
+                  <option value="MAY">MAY</option>
+
+
+                </select>
+                <select name="to_year" id="dropdown1">
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+
+                </select>
+
+
+              </div>
+              <select name="to_day">
+                <option value="SATURDAY">SATURDAY</option>
+                <option value="SUNDAY">SUNDAY</option>
+                <option value="MONDAY">MONDAY</option>
+                <option value="TUESDAY">TUESDAY</option>
+                <option value="WEDNESDAY">WEDNESDAY</option>
+                <option value="THURSDAY">THURSDAY</option>
+                <option value="FRIDAY">FRIDAY</option>
+
+
+              </select>
             </div>
-        </center>
-        <div class="table_controller">
-            
+          </center>
+          <div class="table_controller">
+
             <div class="peroid_num">
-                <div class="no_controll">
-                    <div class="no">1</div>
-                    <div class="no">2</div>
-                </div>
+              <div class="no_controll">
+                <div class="no">1</div>
+                <div class="no">2</div>
+              </div>
 
 
-                <div class="no_controller">
-                    <div class="no">3</div>
-                    <div class="no">4</div>
-                </div>
+              <div class="no_controller">
+                <div class="no">3</div>
+                <div class="no">4</div>
+              </div>
 
 
-                <div class="no_controller">
-                    <div class="no">5</div>
-                    <div class="no">6</div>
-                </div>
+              <div class="no_controller">
+                <div class="no">5</div>
+                <div class="no">6</div>
+              </div>
 
-                <div class="no_controller">
-                    <div class="no">7</div>
-                    <div class="no">8</div>
-                </div>
+              <div class="no_controller">
+                <div class="no">7</div>
+                <div class="no">8</div>
+              </div>
             </div>
             <div class="table_container">
-                <div class="sec_1">
+              <div class="sec_1">
 
-                    <div class="bs1  head">Bs1</div>
-                    <hr class="lenghty_divider">
-                    <div class="bs2  head">Bs2</div>
-                    <hr class="lenghty_divider">
-                    <div class="bs3  head">Bs3</div>
-                    <hr class="lenghty_divider">
-                    <div class="bs4  head">Bs4</div>
-                    <hr class="lenghty_divider">
-                    <div class="bs5a  head">Bs5a</div>
-                    <hr class="lenghty_divider">
-                    <div class="bs5b  head">Bs5b</div>
+                <div class="bs1  head">Bs1</div>
+                <hr class="lenghty_divider">
+                <div class="bs2  head">Bs2</div>
+                <hr class="lenghty_divider">
+                <div class="bs3  head">Bs3</div>
+                <hr class="lenghty_divider">
+                <div class="bs4  head">Bs4</div>
+                <hr class="lenghty_divider">
+                <div class="bs5a  head">Bs5a</div>
+                <hr class="lenghty_divider">
+                <div class="bs5b  head">Bs5b</div>
+              </div>
+              <center>
+                <hr class="header_divider">
+              </center>
+
+              <div class="per_1">
+
+                <div class="bs1 boxes">
+                  <label for="bs1_Per1"></label>
+                  <select style="border: none;" name="bs1_Per1" id="dropdown1">
+                    <option value="AN">AN</option>
+                    <option value="AA">AA</option>
+                    <option value="RS">RS</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="-">-</option>
+                    <option value="URD">URD</option>
+                  </select>
                 </div>
-                <center>
-                    <hr class="header_divider">
-                </center>
-                <div class="per_1">
+                <hr class="lenghty_divider_hig">
+                <div class="bs2 boxes">
+                  <label for="bs2_Per1">
 
-                    <div id=bs1_Per1 class="bs1 boxes"></div>
-                    <hr class="lenghty_divider_hig">
-                    <div  id=bs2_Per1 class="bs2 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div   id=bs3_Per1 class="bs3 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div  id=bs4_Per1 class="bs4 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div  id=bs5a_Per1 class="bs5a boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div  id=bs5b_Per1 class="bs5b boxes"></div>
+                  </label>
+                  <select name="bs2_Per1" id="dropdown1">
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="RS">RS</option>
+                    <option value="HU">HU</option>
+                    <option value="URD">URD</option>
+
+                    <option value="ENG">ENG</option>
+                    <option value="Com">Com</option>
+                  </select>
                 </div>
-                <div class="per_1">
-
-
-                    <div id=bs1_Per2 class="bs3 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div id=bs2_Per2   class="bs4 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div id=bs3_Per2  class="bs5a boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div  id=bs4_Per2 class="bs5b boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div id=bs5a_Per2 class="bs5a boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div id=bs5b_Per2  class="bs2 boxes"></div>
-
+                <hr class="lenghty_divider">
+                <div class="bs3 boxes">
+                  <label for="bs3_Per1"></label>
+                  <select name="bs3_Per1" id="dropdown1">
+                    <option value="MB">MB</option>
+                    <option value="HU">HU</option>
+                    <option value="AA">AA</option>
+                    <option value="MS">MS</option>
+                    <option value="KV">KV</option>
+                    <option value="RS">RS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="URD">URD</option>
+                  </select>
                 </div>
-                <center>
-                    <div class="interval">Break Fast</div>
-                </center>
-                <div class="per_2">
-
-
-                    <div  id=bs1_Per3 class="bs4 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs2_Per3 class="bs5a boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs3_Per3 class="bs5b boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs4_Per3 class="bs1 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs5a_Per3 class="bs2 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs5b_Per3 class="bs3 boxes"></div>
+                <hr class="lenghty_divider">
+                <div class="bs4 boxes">
+                  <label for="bs4_Per1"></label>
+                  <select name="bs4_Per1" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option selected value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="URD">URD</option>
+                    <option value="IT">IT</option>
+                    <option value="-">-</option>
+                  </select>
                 </div>
-                <div class="per_1">
-
-
-                    <div  id=bs1_Per4 class="bs5a boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div  id=bs2_Per4 class="bs5b boxes"></div>
-                    <hr  class="lenghty_divider">
-                    <div  id=bs3_Per4 class="bs1 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div  id=bs4_Per4 class="bs2 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div  id=bs5a_Per4 class="bs3 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div  id=bs5b_Per4 class="bs4 boxes"></div>
-
+                <hr class="lenghty_divider">
+                <div class="bs5a boxes">
+                  <label for="bs5a_Per1"></label>
+                  <select name="bs5a_Per1" id="dropdown1">
+                    <option value="HU">HU</option>
+                  <option value="MB">MB</option>
+                  <option value="MS">MS</option>
+                  <option value="AA">AA</option>
+                  <option value="KV">KV</option>
+                  <option value="AO">AO</option>
+                  <option value="AN">AN</option>
+                  <option selected value="RS">RS</option>
+                  <option value="حزب">حزب</option>
+                  <option value="URD">URD</option>
+                  <option value="-">-</option>
+                  </select>
                 </div>
-                <center>
-                    <div class="interval">Interval</div>
-                </center>
-                <div class="per_2">
-
-
-
-                    <div id=bs1_Per5  class="bs5b boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div id=bs2_Per5  class="bs1 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div id=bs3_Per5  class="bs2 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div id=bs4_Per5  class="bs3 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div id=bs5a_Per5  class="bs4 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div id=bs5b_Per5 class="bs5a boxes"></div>
+                <hr class="lenghty_divider">
+                <div class="bs5b boxes">
+                  <label for="bs5b_Per1"></label>
+                  <select name="bs5b_Per1" id="dropdown1">
+                    <option selected value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
                 </div>
-                <div class="per_1">
+              </div>
+              <div class="per_1">
 
-                    <div  id=bs1_Per6 class="bs1 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div  id=bs2_Per6  class="bs2 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div   id=bs3_Per6 class="bs3 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div   id=bs4_Per6 class="bs4 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div   id=bs5a_Per6 class="bs5a boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div   id=bs5b_Per6 class="bs5b boxes"></div>
-                </div>
-                <center>
-                    <div class="interval">Lunch Break</div>
-                </center>
-                <div class="per_2">
 
-                    <div   id=bs1_Per7 class="bs1 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs2_Per7  class="bs2 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs3_Per7 class="bs3 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs4_Per7 class="bs4 boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs5a_Per7 class="bs5a boxes"></div>
-                    <hr class="lenghty_divider_big">
-                    <div  id=bs5b_Per7 class="bs5b boxes"></div>
+                <div class="bs1 boxes">
+                  <select style="border: none;" name="bs1_Per2" id="dropdown1">
+                    <option value="AA">AA</option>
+                    <option value="RS">RS</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="-">-</option>
+                    <option value="URD">URD</option>
+                    <option value="AN">AN</option>
+                  </select>
                 </div>
-                <div class="per_1">
+                <hr class="lenghty_divider">
+                <div class="bs2 boxes">
+                  <select name="bs2_Per2" id="dropdown1">
+                    <option value="AO">AO</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="HU">HU</option>
+                    <option value="URD">URD</option>
 
-                    <div  id=bs1_Per8  class="bs1 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div id=bs2_Per8 class="bs2 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div id=bs3_Per8 class="bs3 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div id=bs4_Per8 class="bs4 boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div id=bs5a_Per8 class="bs5a boxes"></div>
-                    <hr class="lenghty_divider">
-                    <div id=bs5b_Per8 class="bs5b boxes"></div>
+                    <option value="ENG">ENG</option>
+                    <option value="Com">Com</option>
+                  </select>
                 </div>
+                <hr class="lenghty_divider">
+                <div class="bs3 boxes">
+                  <select name="bs3_Per2" id="dropdown1">
+
+                    <option value="HU">HU</option>
+                    <option value="AA">AA</option>
+                    <option value="MS">MS</option>
+                    <option value="KV">KV</option>
+                    <option value="RS">RS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="URD">URD</option>
+
+                    <option value="MB">MB</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs4 boxes">
+                  <select name="bs4_Per2" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option selected value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="URD">URD</option>
+                    <option value="IT">IT</option>
+                    <option value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs5a boxes">
+                  <select name="bs5a_Per2" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option selected value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs5b boxes">
+                  <select name="bs5b_Per2" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option selected value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+
+              </div>
+              <center>
+                <div class="interval">Break Fast</div>
+              </center>
+              <div class="per_2">
+
+
+                <div class="bs1 boxes">
+                  <select style="border: none;" name="bs1_Per3" id="dropdown1">
+                    <option value="RS">RS</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="-">-</option>
+                    <option value="URD">URD</option>
+                    <option value="AN">AN</option>
+                    <option value="AA">AA</option>
+                  </select>
+                </div>
+
+                <hr class="lenghty_divider_big">
+
+                <div class="bs2 boxes">
+                  <select name="bs2_Per3" id="dropdown1">
+
+                    <option value="KV">KV</option>
+                    <option value="AA">AA</option>
+                    <option value="MS">MS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="RS">RS</option>
+                    <option value="HU">HU</option>
+                    <option value="URD">URD</option>
+                    <option value="ENG">ENG</option>
+                    <option value="Com">Com</option>
+                  </select>
+                </div>
+
+                <hr class="lenghty_divider_big">
+
+                <div class="bs3 boxes">
+                  <select name="bs3_Per3" id="dropdown1">
+
+                    <option value="AA">AA</option>
+                    <option value="MS">MS</option>
+                    <option value="KV">KV</option>
+                    <option value="RS">RS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="URD">URD</option>
+
+                    <option value="MB">MB</option>
+                    <option value="HU">HU</option>
+                  </select>
+                </div>
+
+                <hr class="lenghty_divider_big">
+
+                <div class="bs4 boxes">
+                  <select name="bs4_Per3" id="dropdown1">
+                    <option selected value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="URD">URD</option>
+                    <option value="IT">IT</option>
+                    <option value="-">-</option>
+                  </select>
+                </div>
+
+                <hr class="lenghty_divider_big">
+
+                <div class="bs5a boxes">
+                  <select name="bs5a_Per3" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option selected value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+
+                <hr class="lenghty_divider_big">
+
+                <div class="bs5b boxes">
+                  <select name="bs5b_Per3" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option selected value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+              </div>
+              <div class="per_1">
+
+
+                <div class="bs1 boxes">
+                  <select style="border: none;" name="bs1_Per4" id="dropdown1">
+
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="-">-</option>
+                    <option value="URD">URD</option>
+                    <option value="AN">AN</option>
+                    <option value="AA">AA</option>
+                    <option value="RS">RS</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs2 boxes">
+                  <select name="bs2_Per4" id="dropdown1">
+                    <option value="RS">RS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+
+                    <option value="HU">HU</option>
+                    <option value="URD">URD</option>
+
+
+                    <option value="ENG">ENG</option>
+                    <option value="Com">Com</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs3 boxes">
+                  <select name="bs3_Per4" id="dropdown1">
+
+                    <option value="MS">MS</option>
+                    <option value="KV">KV</option>
+                    <option value="RS">RS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="URD">URD</option>
+
+                    <option value="MB">MB</option>
+                    <option value="HU">HU</option>
+                    <option value="AA">AA</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs4 boxes">
+                  <select name="bs4_Per4" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option selected value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="URD">URD</option>
+                    <option value="IT">IT</option>
+                    <option value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs5a boxes">
+                  <select name="bs5a_Per4" id="dropdown1">
+                    <option selected value="HU">HU</option>
+                  <option value="MB">MB</option>
+                  <option value="MS">MS</option>
+                  <option value="AA">AA</option>
+                  <option value="KV">KV</option>
+                  <option value="AO">AO</option>
+                  <option value="AN">AN</option>
+                  <option value="RS">RS</option>
+                  <option value="حزب">حزب</option>
+                  <option value="URD">URD</option>
+                  <option  value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs5b boxes">
+                  <select name="bs5b_Per4" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option selected value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+
+              </div>
+              <center>
+                <div class="interval">Interval</div>
+              </center>
+              <div class="per_2">
+
+
+
+                <div class="bs1 boxes">
+                  <select style="border: none;" name="bs1_Per5" id="dropdown1">
+
+
+                    <option value="MS">MS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="-">-</option>
+                    <option value="URD">URD</option>
+                    <option value="AN">AN</option>
+                    <option value="AA">AA</option>
+                    <option value="RS">RS</option>
+                    <option value="KV">KV</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs2 boxes">
+                  <select name="bs2_Per5" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="RS">RS</option>
+
+                    <option value="URD">URD</option>
+
+                    <option value="ENG">ENG</option>
+                    <option value="Com">Com</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs3 boxes">
+                  <select name="bs3_Per5" id="dropdown1">
+
+                    <option value="KV">KV</option>
+                    <option value="RS">RS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="URD">URD</option>
+
+                    <option value="MB">MB</option>
+                    <option value="HU">HU</option>
+                    <option value="AA">AA</option>
+                    <option value="MS">MS</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs4 boxes">
+                  <select name="bs4_Per5" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="URD">URD</option>
+                    <option selected value="IT">IT</option>
+                    <option value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs5a boxes">
+                  <select name="bs5a_Per5" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option selected value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs5b boxes">
+                  <select name="bs5b_Per5" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option selected value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="per_1">
+
+                <div class="bs1 boxes">
+                  <select style="border: none;" name="bs1_Per6" id="dropdown1">
+                    <option value="حزب">حزب</option>
+                    <option value="-">-</option>
+                    <option value="URD">URD</option>
+                    <option value="AN">AN</option>
+                    <option value="AA">AA</option>
+                    <option value="RS">RS</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs2 boxes">
+                  <select name="bs2_Per6" id="dropdown1">
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="RS">RS</option>
+                    <option value="HU">HU</option>
+                    <option value="URD">URD</option>
+
+
+                    <option value="ENG">ENG</option>
+                    <option value="Com">Com</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs3 boxes">
+                  <select name="bs3_Per6" id="dropdown1">
+
+
+                    <option value="RS">RS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="URD">URD</option>
+
+                    <option value="MB">MB</option>
+                    <option value="HU">HU</option>
+                    <option value="AA">AA</option>
+                    <option value="MS">MS</option>
+                    <option  value="KV">KV</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs4 boxes">
+                  <select name="bs4_Per6" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option selected value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="URD">URD</option>
+                    <option value="IT">IT</option>
+                    <option value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs5a boxes">
+                  <select name="bs5a_Per6" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option selected value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs5b boxes">
+                  <select name="bs5b_Per6" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option selected value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+              </div>
+              <center>
+                <div class="interval">Lunch Break</div>
+              </center>
+              <div class="per_2">
+
+                <div class="bs1 boxes">
+                  <select style="border: none;" name="bs1_Per7" id="dropdown1">
+
+                    <option value="-">-</option>
+                    <option value="URD">URD</option>
+                    <option value="AN">AN</option>
+                    <option value="AA">AA</option>
+                    <option value="RS">RS</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="حزب">حزب</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs2 boxes">
+                  <select name="bs2_Per7" id="dropdown1">
+                    <option value="URD">URD</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="RS">RS</option>
+                    <option value="HU">HU</option>
+
+
+                    <option value="ENG">ENG</option>
+                    <option value="Com">Com</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs3 boxes">
+                  <select name="bs3_Per7" id="dropdown1">
+
+                    <option value="AN">AN</option>
+                    <option value="AO">AO</option>
+                    <option value="URD">URD</option>
+
+                    <option value="MB">MB</option>
+                    <option value="HU">HU</option>
+                    <option value="AA">AA</option>
+                    <option value="MS">MS</option>
+                    <option value="KV">KV</option>
+                    <option value="RS">RS</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs4 boxes">
+                  <select name="bs4_Per7" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option selected value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option value="URD">URD</option>
+                    <option value="IT">IT</option>
+                    <option value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs5a boxes">
+                  <select name="bs5a_Per7" id="dropdown1">
+                    <option value="HU">HU</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="AO">AO</option>
+                    <option value="AN">AN</option>
+                    <option value="RS">RS</option>
+                    <option selected value="حزب">حزب</option>
+                    <option value="URD">URD</option>
+                    <option  value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider_big">
+                <div class="bs5b boxes">
+                  <select name="bs5b_Per7" id="dropdown1">
+                    <option value="HU">HU</option>
+                  <option value="MB">MB</option>
+                  <option value="MS">MS</option>
+                  <option selected value="AA">AA</option>
+                  <option value="KV">KV</option>
+                  <option value="AO">AO</option>
+                  <option value="AN">AN</option>
+                  <option value="RS">RS</option>
+                  <option value="حزب">حزب</option>
+                  <option value="URD">URD</option>
+                  <option  value="-">-</option>
+                  </select>
+                </div>
+              </div>
+              <div class="per_1">
+
+                <div class="bs1 boxes">
+                  <select style="border: none;" name="bs1_Per8" id="dropdown1">
+
+
+                    <option value="URD">URD</option>
+                    <option value="AN">AN</option>
+                    <option value="AA">AA</option>
+                    <option value="RS">RS</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+                    <option value="حزب">حزب</option>
+                    <option value="-">-</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs2 boxes">
+                  <select name="bs2_Per8" id="dropdown1">
+                    <option value="AN">AN</option>
+                    <option value="AA">AA</option>
+                    <option value="KV">KV</option>
+                    <option value="MS">MS</option>
+
+                    <option value="AO">AO</option>
+                    <option value="AO">AO</option>
+                    <option value="RS">RS</option>
+                    <option value="HU">HU</option>
+                    <option value="URD">URD</option>
+
+
+                    <option value="ENG">ENG</option>
+                    <option value="Com">Com</option>
+                  </select>
+                </div>
+                <hr class="lenghty_divider">
+                <div class="bs3 boxes"><select name="bs3_Per8" id="dropdown1">
+
+
+                    <option value="AO">AO</option>
+                    <option value="URD">URD</option>
+
+                    <option value="MB">MB</option>
+                    <option value="HU">HU</option>
+                    <option value="AA">AA</option>
+                    <option value="MS">MS</option>
+                    <option value="KV">KV</option>
+                    <option value="RS">RS</option>
+                    <option value="AN">AN</option>
+                  </select></div>
+                <hr class="lenghty_divider">
+                <div class="bs4 boxes"><select name="bs4_Per8" id="dropdown1">
+                  <option value="HU">HU</option>
+                  <option value="MB">MB</option>
+                  <option value="MS">MS</option>
+                  <option value="AA">AA</option>
+                  <option value="KV">KV</option>
+                  <option value="AO">AO</option>
+                  <option value="AN">AN</option>
+                  <option value="RS">RS</option>
+                  <option value="URD">URD</option>
+                  <option value="IT">IT</option>
+                  <option selected value="-">-</option>
+                  
+                  </select></div>
+
+              
+
+                <hr class="lenghty_divider">
+                <div class="bs5a boxes"><select name="bs5a_Per8" id="dropdown1">
+                  <option value="HU">HU</option>
+                  <option value="MB">MB</option>
+                  <option selected value="MS">MS</option>
+                  <option value="AA">AA</option>
+                  <option value="KV">KV</option>
+                  <option value="AO">AO</option>
+                  <option value="AN">AN</option>
+                  <option value="RS">RS</option>
+                  <option value="حزب">حزب</option>
+                  <option value="URD">URD</option>
+                  <option  value="-">-</option>
+                  </select></div>
+                <hr class="lenghty_divider">
+                <div class="bs5b boxes"><select name="bs5b_Per8" id="dropdown1">
+                  <option value="HU">HU</option>
+                  <option value="MB">MB</option>
+                  <option value="MS">MS</option>
+                  <option value="AA">AA</option>
+                  <option value="KV">KV</option>
+                  <option value="AO">AO</option>
+                  <option value="AN">AN</option>
+                  <option value="RS">RS</option>
+                  <option selected value="حزب">حزب</option>
+                  <option value="URD">URD</option>
+                  <option  value="-">-</option>
+                  </select></div>
+              </div>
+
+              <input class="update_btn" type="submit" value="Update">
+
             </div>
-            
+
+          </div>
         </div>
+      </form>
     </div>
 
-        <div class="btns">
-           <a href="/mg-admin"> <button  class="edit_btn">Edit</button></a>
-            <button id="dl-png" class="share_btn">Download</button>
-        </div>
+  </section>
+</body>
 
-    </div>
-    
-</section>
-
-
-
-
-
-   <script src="css/java/html2canvas.min.js"></script>
-
- 
-   <script>
-     document.getElementById("dl-png").onclick = function(){
-           const screenshotTarget= document.getElementById('example-table');
-   
-           html2canvas(screenshotTarget).then((canvas)=>{
-               const base64image = canvas.toDataURL("image/png")
-               var anchor = document.createElement('a');
-               anchor.setAttribute("href", base64image);
-               anchor.setAttribute("download", "my-image.png");
-               anchor.click()
-               anchor.remove();
-           })
-       }
-     fetch('/data')
-       .then(response => response.json())
-       .then(data => {
-        const to_date =document.getElementById('to_date');
-        const to_month =document.getElementById('to_month');
-        const to_year =document.getElementById('to_year');
-
-         const bs1_Per1 = document.getElementById('bs1_Per1');
-         const bs1_Per2 = document.getElementById('bs1_Per2');
-         const bs1_Per3 = document.getElementById('bs1_Per3');
-         const bs1_Per4 = document.getElementById('bs1_Per4');
-         const bs1_Per5 = document.getElementById('bs1_Per5');
-         const bs1_Per6 = document.getElementById('bs1_Per6');
-         const bs1_Per7 = document.getElementById('bs1_Per7');
-         const bs1_Per8 = document.getElementById('bs1_Per8');
-
-
-         const bs2_Per1 = document.getElementById('bs2_Per1');
-         const bs2_Per2 = document.getElementById('bs2_Per2');
-         const bs2_Per3 = document.getElementById('bs2_Per3');
-         const bs2_Per4 = document.getElementById('bs2_Per4');
-         const bs2_Per5 = document.getElementById('bs2_Per5');
-         const bs2_Per6 = document.getElementById('bs2_Per6');
-         const bs2_Per7 = document.getElementById('bs2_Per7');
-         const bs2_Per8 = document.getElementById('bs2_Per8');
-
-
-         const bs3_Per1 = document.getElementById('bs3_Per1');
-         const bs3_Per2 = document.getElementById('bs3_Per2');
-         const bs3_Per3 = document.getElementById('bs3_Per3');
-         const bs3_Per4 = document.getElementById('bs3_Per4');
-         const bs3_Per5 = document.getElementById('bs3_Per5');
-         const bs3_Per6 = document.getElementById('bs3_Per6');
-         const bs3_Per7 = document.getElementById('bs3_Per7');
-         const bs3_Per8 = document.getElementById('bs3_Per8');
-
-
-         const bs4_Per1 = document.getElementById('bs4_Per1');
-         const bs4_Per2 = document.getElementById('bs4_Per2');
-         const bs4_Per3 = document.getElementById('bs4_Per3');
-         const bs4_Per4 = document.getElementById('bs4_Per4');
-         const bs4_Per5 = document.getElementById('bs4_Per5');
-         const bs4_Per6 = document.getElementById('bs4_Per6');
-         const bs4_Per7 = document.getElementById('bs4_Per7');
-         const bs4_Per8 = document.getElementById('bs4_Per8');
-       
-
-         const bs5a_Per1 = document.getElementById('bs5a_Per1');
-         const bs5a_Per2 = document.getElementById('bs5a_Per2');
-         const bs5a_Per3 = document.getElementById('bs5a_Per3');
-         const bs5a_Per4 = document.getElementById('bs5a_Per4');
-         const bs5a_Per5 = document.getElementById('bs5a_Per5');
-         const bs5a_Per6 = document.getElementById('bs5a_Per6');
-         const bs5a_Per7 = document.getElementById('bs5a_Per7');
-         const bs5a_Per8 = document.getElementById('bs5a_Per8');
-
-
-         const bs5b_Per1 = document.getElementById('bs5b_Per1');
-         const bs5b_Per2 = document.getElementById('bs5b_Per2');
-         const bs5b_Per3 = document.getElementById('bs5b_Per3');
-         const bs5b_Per4 = document.getElementById('bs5b_Per4');
-         const bs5b_Per5 = document.getElementById('bs5b_Per5');
-         const bs5b_Per6 = document.getElementById('bs5b_Per6');
-         const bs5b_Per7 = document.getElementById('bs5b_Per7');
-         const bs5b_Per8 = document.getElementById('bs5b_Per8');
- 
-         if (data.length > 0) {
-           const firstItem = data[data.length - 1]; // Assuming the first item has the desired data
- 
-           to_date.textContent = ` ${firstItem.to_date}`;
-           to_month.textContent = ` ${firstItem.to_month}`;
-           to_year.textContent = ` ${firstItem.to_year}`;
-
-           bs1_Per1.textContent = ` ${firstItem.bs1_Per1}`;
-           bs1_Per2.textContent = ` ${firstItem.bs1_Per2}`;
-           bs1_Per3.textContent = ` ${firstItem.bs1_Per3}`;
-           bs1_Per4.textContent = ` ${firstItem.bs1_Per4}`;
-           bs1_Per5.textContent = ` ${firstItem.bs1_Per5}`;
-           bs1_Per6.textContent = ` ${firstItem.bs1_Per6}`;
-           bs1_Per7.textContent = ` ${firstItem.bs1_Per7}`;
-           bs1_Per8.textContent = ` ${firstItem.bs1_Per8}`;
-
-
-
-           bs2_Per1.textContent = ` ${firstItem.bs2_Per1}`;
-           bs2_Per2.textContent = ` ${firstItem.bs2_Per2}`;
-           bs2_Per3.textContent = ` ${firstItem.bs2_Per3}`;
-           bs2_Per4.textContent = ` ${firstItem.bs2_Per4}`;
-           bs2_Per5.textContent = ` ${firstItem.bs2_Per5}`;
-           bs2_Per6.textContent = ` ${firstItem.bs2_Per6}`;
-           bs2_Per7.textContent = ` ${firstItem.bs2_Per7}`;
-           bs2_Per8.textContent = ` ${firstItem.bs2_Per8}`;
-
-
-
-           bs3_Per1.textContent = ` ${firstItem.bs3_Per1}`;
-           bs3_Per2.textContent = ` ${firstItem.bs3_Per2}`;
-           bs3_Per3.textContent = ` ${firstItem.bs3_Per3}`;
-           bs3_Per4.textContent = ` ${firstItem.bs3_Per4}`;
-           bs3_Per5.textContent = ` ${firstItem.bs3_Per5}`;
-           bs3_Per6.textContent = ` ${firstItem.bs3_Per6}`;
-           bs3_Per7.textContent = ` ${firstItem.bs3_Per7}`;
-           bs3_Per8.textContent = ` ${firstItem.bs3_Per8}`;
-
-
-           bs4_Per1.textContent = ` ${firstItem.bs4_Per1}`;
-           bs4_Per2.textContent = ` ${firstItem.bs4_Per2}`;
-           bs4_Per3.textContent = ` ${firstItem.bs4_Per3}`;
-           bs4_Per4.textContent = ` ${firstItem.bs4_Per4}`;
-           bs4_Per5.textContent = ` ${firstItem.bs4_Per5}`;
-           bs4_Per6.textContent = ` ${firstItem.bs4_Per6}`;
-           bs4_Per7.textContent = ` ${firstItem.bs4_Per7}`;
-           bs4_Per8.textContent = ` ${firstItem.bs4_Per8}`;
-
-
-
-           bs5a_Per1.textContent = ` ${firstItem.bs5a_Per1}`;
-           bs5a_Per2.textContent = ` ${firstItem.bs5a_Per2}`;
-           bs5a_Per3.textContent = ` ${firstItem.bs5a_Per3}`;
-           bs5a_Per4.textContent = ` ${firstItem.bs5a_Per4}`;
-           bs5a_Per5.textContent = ` ${firstItem.bs5a_Per5}`;
-           bs5a_Per6.textContent = ` ${firstItem.bs5a_Per6}`;
-           bs5a_Per7.textContent = ` ${firstItem.bs5a_Per7}`;
-           bs5a_Per8.textContent = ` ${firstItem.bs5a_Per8}`;
-
-
-
-           bs5b_Per1.textContent = ` ${firstItem.bs5b_Per1}`;
-           bs5b_Per2.textContent = ` ${firstItem.bs5b_Per2}`;
-           bs5b_Per3.textContent = ` ${firstItem.bs5b_Per3}`;
-           bs5b_Per4.textContent = ` ${firstItem.bs5b_Per4}`;
-           bs5b_Per5.textContent = ` ${firstItem.bs5b_Per5}`;
-           bs5b_Per6.textContent = ` ${firstItem.bs5b_Per6}`;
-           bs5b_Per7.textContent = ` ${firstItem.bs5b_Per7}`;
-           bs5b_Per8.textContent = ` ${firstItem.bs5b_Per8}`;
-         
-         } else {
-           myClassNameDiv.textContent = 'No data available';
-         }
-       })
-       .catch(error => console.error(error));
-   </script>
-
-
-
- </body>
- </html>
- 
+</html>
