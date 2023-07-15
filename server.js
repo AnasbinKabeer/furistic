@@ -105,7 +105,9 @@ app.get('/', function (req, res) {
 app.get('/mg-admin', function (req, res) {
     res.sendFile(__dirname + '/admin.html');
   });
-
+  app.get('/new', function (req, res) {
+    res.sendFile(__dirname + '/newindex.html');
+  });
 
   app.post('/login', (req, res) => {
     const { password } = req.body;
